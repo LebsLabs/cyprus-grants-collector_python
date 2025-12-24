@@ -1,10 +1,10 @@
 import pandas as pd
 import sqlite3
 
-# Step 1: Read the new Cyprus CSV (the one we just created)
+# Step 1: Read the new Cyprus CSV
 cyprus_df = pd.read_csv('res_fund_grants_expanded.csv', sep=';', encoding='utf-8')
 
-# Step 2: Create a sample Malta row to match your original example (you can add more later)
+# Step 2: Create a sample Malta row to match your original example
 malta_data = {
     'country': ['Malta'],
     'entity_name': ['Housing Authority'],
@@ -24,7 +24,7 @@ malta_data = {
 }
 malta_df = pd.DataFrame(malta_data)
 
-# Step 3: Combine both datasets
+# Step 3: Combine both data sets
 combined_df = pd.concat([malta_df, cyprus_df], ignore_index=True)
 
 print("Combined data preview:")
@@ -63,4 +63,5 @@ conn.commit()
 conn.close()
 
 print("\nAll data successfully imported into 'grants_database.db' → table 'grants'!")
+
 print("You now have Malta + Cyprus grants in one beautiful database.")
