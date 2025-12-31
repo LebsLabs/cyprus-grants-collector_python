@@ -1,23 +1,48 @@
 🚀 Project Overview
 
-Cyprus Grants Collector is a Python application that aggregates, processes, and exposes data on available grants and funding programs relevant to citizens in the EU. This tool is part of a broader effort to make general EU funding information easily searchable and consumable for individuals, startups, and organizations.
+Cyprus Grants Collector is a Python application that aggregates, processes, and exposes data on available EU grant and funding programs relevant to citizens, startups, SMEs, municipalities, and organizations across Europe.
 
-Typical use cases include:
+The project aims to make EU funding information searchable, structured, and easily consumable for downstream applications such as dashboards, APIs, and data analysis tools.
 
-Collecting grant and funding opportunities programmatically
+🎯 Use Cases
 
-Making EU grant info easily searchable or filterable
+Programmatically collect EU grant and funding opportunities
 
-Powering backend services or dashboards for grant discovery
+Enable search and filtering of grant information
 
-📌 Grants include housing grants accross EU for SMEs, municipalities and for sure housholds & individuals throughout Europe.
+Power backend services or dashboards for grant discovery
 
-🧠 Features
+📌 Grants include housing and development grants across the EU, targeting:
+
+Individuals & households
+
+SMEs & startups
+
+Municipalities and public entities
+
+🛠️ Tech Stack
+
+Python
+
+BeautifulSoup — HTML parsing & scraping
+
+Pandas — Data processing and normalization
+
+✨ Features
 
 🔍 Data Collection — Scrapes or fetches grant listings from public sources (APIs / HTML pages)
 
-📦 Modular Python Codebase — Easy to extend with new sources or filters
+📦 Modular Codebase — Easily extensible with new sources or filters
 
-📊 Structured Outputs — Normalized data ready for analysis, display, or APIs, output possible in .db, .csv, .xlsx files. 
+📊 Structured Outputs — Export to .db, .csv, .xlsx
 
-🔄 Reusable Components — Parsers, connectors, and utilities for future grant projects
+🔄 Reusable Components — Parsers, connectors, and utilities reusable across grant-related projects
+
+🚧 Project Status
+
+This project is actively under development.
+Code quality, structure, and documentation will be further improved over time.
+
+👤 Author: 
+
+LebsLabs
